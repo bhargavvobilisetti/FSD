@@ -1,0 +1,61 @@
+.ia{
+	height:320px;
+	width: 900px;
+	color: blue;
+	margin-left: 10%;
+	background-color:whitesmoke;
+
+
+}
+.ib{
+	height:250px;
+	width:220px;
+	background-color:white;
+	float:left;
+	margin: 35px;
+	border-radius: 15px;
+
+}
+.ic{
+	height:250px ;
+	width:220px ;
+	background-color:white;
+	float: left;
+	margin: 35px;
+	border-radius: 15px;
+
+
+}
+.id{
+	height:250px ;
+	width:220px ;
+	background-color:white;
+	float: left	;
+	margin: 35px;
+	border-radius: 15px;
+
+}
+i{
+	font-size: 60px;
+	padding-left:90px;
+	padding-top: 20px;
+}
+p{
+	color: black;
+	padding-left:70px;
+
+}
+.abc{
+	color:lightgrey;
+	padding-left: 25px;
+	padding-right:10px;
+}
+hr{
+	padding-left: 10px;
+	color:blue;
+}
+.u{
+	background-color:blue;
+	border-radius: 10px;
+	margin-left: 50px;
+}

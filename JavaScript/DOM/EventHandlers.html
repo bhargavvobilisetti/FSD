@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event handlers</title>
+</head>
+<body>
+	<!--1  inline enent handler -->
+	<!-- <button onclick="test()" style="text-align: center;">Click here</button> -->
+	<!-- 2  event properties -->
+	<!-- <button id="t" >Click here</button> -->
+	<!-- 3 event listener -->
+	<!-- <button id="t1">test</button> -->
+	<button onclick="hidediv()" id="" >Hide</button>
+	<button onclick="showdiv()">show</button>
+	<span id="k">rtyui</span>
+
+	<!-- <button onclick="incrby1()" >inc</button>
+	<button onclick="decrby1()" >dec</button>
+	<p id="bb"></p>
+ -->
+
+	<script type="text/javascript">
+		//1st way
+		// function test() {
+		// 	// body...
+		// 	alert("testing")
+		// 	document.body.style.background='red'
+		// }
+
+		//2nd way
+		// let btn=document.getElementById('t')
+		// btn.onclick=function(){
+		// 	// body..
+
+		// 	alert("testing")
+		// 	document.body.style.background='green'
+		// }
+
+		
+
+		//3rd way
+		// let btn=document.getElementById('t1');
+		// btn.addEventListener('click',test)
+		// 	// body..
+		// function test(){
+		// 	alert("testing")
+		// 	document.body.style.background='blue'
+		// 	// document.getElementById('')
+		// }
+
+		// let btn=document.getElementById('t1');
+		// btn.addEventListener('click',function(){
+		// 	alert("testing")
+		// 	document.body.style.background='blue'
+		// })
+
+
+		
+		function hidediv(){
+			document.getElementById('k').style.display='none'
+		}
+		function showdiv(){
+			document.getElementById('k').style.display='block'
+		}
+
+
+		// var i=0;
+		// function incrby1(){
+		// 	 if(i<10){
+		// 	document.getElementById('bb').innerText=i++;
+		// 			}
+		// 		}
+		// function decrby1(){
+		// 	 if(i>0){
+		// 	document.getElementById('bb').innerText=i--;
+		// }
+		// }
+		
+		
+	</script>
+
+</body>
+</html>

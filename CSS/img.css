@@ -1,0 +1,34 @@
+/*body{
+	background-image: url("bh.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+}*/
+
+span{
+	border-style: solid;
+	border-width: 5px;
+	border-color: blue gray violet darkblue;
+	border-top-style: dotted;
+	border-right-style: solid;
+	border-bottom-style: groove;
+	border-left-style:ridge;
+	border-block: 10px;
+
+}
+he{
+	border-style: solid;
+	border-width: 5px;
+	border-color: red green greenyellow wheat;
+	border-right-style:dashed;
+	border-top-style:double;
+	border-left-style:groove;
+	border-bottom-style:solid;
+}
+
+p{
+	height:240px;
+	width:280px;
+	border-style:dotted;
+	background-color:lightpink;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+</head>
+<body>
+	<h1>JavaScript</h1>
+</body>
+<script>
+	// var a=10;
+	// var b=20;
+	// var c=30;
+	// alert(a);
+	// document.write("welcome to JavaScript</br>");
+	// document.write("the value of a is",a);
+	// document.write("hsjc<br>");
+	// var n='bhargav';
+	// var n =10;
+	// document.write(n.length	,"<br>");
+	// console.log(b);
+	// k='reka ';
+	// k+='ramya,';
+	// k+='geetha';
+	// document.write(k,"<br>");
+
+	// var arr=['hai','sw','bye','<br>'];
+	// console.log(arr);
+	// document.write(arr,'<','b-r','>');
+	// document.write(arr[1],'<br>');
+	// document.write("hi\nsir",'<br>');
+	var obj=[{
+		'name':'tata',
+		'rollno':1234,
+		'college':'ace',
+		'branch':'cse'
+
+	},
+	{
+		'name':'tata1',
+		'rollno':12345,
+		'college':'acet',
+		'branch':'cse'
+	},
+	{
+		'name':'tata3',
+		'rollno':12345,
+		'college':'acet',
+		'branch':'cse'
+	},
+	{
+		'name':'tata4',
+		'rollno':12345,
+		'college':'acet',
+		'branch':'cse'
+	},
+	{
+		'name':'tata5',
+		'rollno':12345,
+		'college':'acet',
+		'branch':'cse'
+	}
+	]
+	 document.write(obj);
+	 // console.log(obj.college);
+	// // console.log(obj.branch);
+	 console.log(obj[0].name);
+	// console.log(obj[1].name);
+	// document.write(obj[0].name);
+	// document.write(obj[0].rollno)
+	// document.write(obj[1].name);
+	// console.log(obj)
+	// for(var i=0;i<obj.length;i++)
+	// {
+	// 	// console.log(obj[i].name,obj[i].rollno)
+	// 	console.log(obj[i])
+	// 	document.write(obj[i].name, obj[i].branch,'<br>');
+	// }
+	// for (var i=0;i<obj.length;i++){
+    //   // for (var k in obj[i]){
+    //     console.log(obj[i].name,obj[i].rollno,obj[i].college,obj[i].branch)
+    // }
+    for(var i=0;i<obj.length;i++){
+    	for(key in obj[i]){
+    		document.write(obj[i][key],"\n")
+    		//console.log(obj[i][key])	
+    	}
+    }
+    // calling x after definition
+        // var x = 5;
+        // document.write(x, "\n");
+ 
+        // // calling y after definition
+        // let y = 10;
+        // document.write(y, "\n");
+   
+    
+    
+
+
+</script>
+
+</html>

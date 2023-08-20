@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions</title>
+</head>
+<body>
+	<script type="text/javascript">
+	//functionkeyword functionname(arg1,arg2,arg3...argn)
+	{
+		//statement
+		//return statement
+	}
+	//normal functions with no parameters
+	function test(){
+		alert("10")
+	}
+	test() //calling the function
+
+	//function with one paramter
+	// function gettingname(name){
+	// 	console.log(name)
+	// 	document.write(name)
+	// }
+	// // gettingname('hii')
+
+
+	// var a = prompt("enter your id")
+	// function scanyourid(rolno){
+	// 	document.write(rolno)
+	// }
+	//scanyourid(a)
+	//scanyourid('2345')
+	//function with two paramters
+	// function add(a,b){
+	// 	document.write(a+b)
+	// }
+	//  add(2,1,10)
+	// multi(5,5)
+	// function multi(a,b){
+	// 	document.write(a*b);
+	// }
+	// //anonymous functions is a function without having function name
+	// var x =function(a,b){
+	// 	return a*b;
+	// }
+	// document.write(x(2));
+	// function cub(a){
+	// 	for(var i=0;i<=a;i++)
+	// 		document.write(i*i*i,"<br>")
+	// 	//document.write(a*a*a)
+	// }
+	//  cub(12)
+
+
+	// var b=prompt("enter your id")
+	// var b1=prompt("enter your id")
+	// function  add(b,b1){
+	// 	document.write(b+b1)
+	// }
+	//arrow function with two arguments	
+	add=(a,b)=>{
+		document.write(a+b)
+	}
+	// add(10,20)
+	//arrow function with one argument
+	document.write("<br>")
+	getname=a=>{
+		document.write(a)
+	}
+	// getname('bye')
+	//arrow function with no argument
+	//test =()=>{ or
+	// test=(_)=>{
+	// 	document.write('sdf')
+	// }
+	 // test()
+
+	//setTimeout function
+	setTimeout(function(){
+		document.write("enable after 2 sec")
+	},2000)
+	// callback function 
+	setTimeout(test,5000)
+	function test(){
+		document.write("enable after 5 sec")
+	}
+</script>
+
+</body>
+</html>

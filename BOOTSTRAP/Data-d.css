@@ -1,0 +1,35 @@
+.r{
+	height: 15%;
+	width: 800px;
+	margin-left: 40%;
+}
+.u{
+	background-color:lightgreen;
+	margin-left: 20	%;
+	font-size: 22px;
+	border: 2px solid lightgreen;
+	border-radius:5px;
+	color:white;
+}
+.u1{
+	background-color:lightskyblue;
+	font-size: 22px;
+	border-radius:5px;
+	border: 2px solid lightskyblue;
+	color: white;
+}
+.u2{
+	background-color: red;
+	font-size: 22px;
+	border-radius:5px;
+	border: 2px solid red;	
+	color:white;
+}
+.t{
+	background-color:#dee2e6 ;
+	height: 1000px;
+}
+.o{
+/*	background-color: #fff;*/
+	background-color: #198754;
+}

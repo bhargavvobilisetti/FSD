@@ -1,0 +1,285 @@
+*{
+	margin:0px ;
+	box-sizing: border-box;
+}
+
+.d1{
+	height:3500px;
+	width:980px;
+	background-color:black;
+/*	#272829;*/
+	text-align:center;
+border-top: 5px;
+	margin-left:150px;
+
+}
+.d2{
+	height:500px;
+	width: 980px;
+	background-image:url('../images/WL-2.jpg');
+/*	opacity: 0.5;*/
+}	
+.d3{
+	height:100px;
+	width: 980px;
+}
+.h{
+	color: white;
+	margin-right:800px;
+	margin-left: 3%;
+	padding-top: 2%;
+	font-family: initial;
+}
+/*i{
+	color: white;
+	padding-left: 88%;
+	
+}*/
+.h1{
+	color: white;
+	margin-top: 9%;
+	font-size: 50px;
+	font-family:cursive;
+	position: static;
+}
+.h2{
+	color:white;
+	margin-top:20px	;
+/*	font-style:oblique;*/
+	font-family:cursive;
+	position: static;
+}
+input{
+	height: 35px;
+	width:100px;
+	border-radius:20px;
+	font-family:cursive;
+	background-color: white;
+}
+
+.h3{
+	color: white;
+
+}
+.h4{
+	color: white;
+	
+	font-family: cursive;
+
+}
+.d4{
+	height:400px;
+	width: 900px;
+	background-color: black;
+	margin-left: 55px;
+
+}
+.h5{
+	height:400px;
+	width: 260px;
+	float: left;
+	background-image:url('../images/WL-3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:white;
+	text-align:left;
+	padding-top:20%;
+	font-family: 'Playfair Display',serif;
+	font-size:27px;
+	padding-left:3%;
+
+
+}
+.h6{
+	height:400px;
+	width: 260px;
+	background-color:#272829;
+	float: left;
+	margin-left: 50px;
+	background-image:url('../images/WL-6.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:white;
+	text-align:left;
+	padding-top:20%;
+	font-family: 'Playfair Display',serif;
+	font-size:27px;
+	padding-left:3%;
+
+
+}
+.h7{
+	height:400px;
+	width: 260px;
+	background-color:#272829;
+	float: left;
+	margin-left: 50px;
+	background-image:url('../images/WL-5.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:white;
+	text-align:left;
+	padding-top:20%;
+	font-family: 'Playfair Display',serif;
+	font-size:25px;
+	padding-left:3%;
+}
+.d5{
+	height:550px;
+	width: 980px;
+	background-image:url('../images/FA.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.h8{
+	color: white;
+/*	margin-top: 18%;*/
+	font-size: 50px;
+	font-style:oblique;
+	padding-top:25%;
+}
+
+}
+.d6{
+	height:400px;
+	width:980px;
+	color: white;
+
+}
+.h9{
+	color: white;
+	font-family: cursive;
+
+}
+.hh1{
+	color: white;
+	font-size:35px;
+}
+.hh2{
+	color:white;
+	font-size:13px;
+}
+.d7{
+	height: 390px;
+	width: 980px;
+	background-image:url('../images/WL-B-8.jpg');
+}
+.d8{
+	height:350px;
+	width: 850px;
+	background-color: black;
+	margin-left: 65px;
+}
+.hh3{
+	height:350px;
+	width:400px;
+/*background-color:blue;*/
+	float: left;
+	background-image: url('../images/WL-12.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.hh4{
+	height:350px;
+	width:400px;
+/*	background-color:red;*/
+	float: left;
+	margin-left: 5%;
+	background-image: url('../images/WL-15.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.d9{
+	width: 980px;
+	height: 150px;
+
+}
+.hh5{
+	color: white;
+	font-size:35px;
+}
+.hh6{
+	color:white;
+	font-size:13px;
+
+}
+.d10{
+	height: 200px;
+	width:880px;
+	background-color:black;
+	margin-left: 60px;
+}
+.hh7{
+	height: 200px;
+	width:205px;
+	background-color: black;
+	float:left;
+	margin-right: 2%;
+	background-image: url('../images/WL-16.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.hh8{
+	height: 200px;
+	width:205px;
+	background-color:black;
+	float:left;
+	margin-right:2%;
+	background-image: url('../images/WL-18.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position:revert-layer;
+
+}
+.hh9{
+	height: 200px;
+	width:205px;
+	background-color: black;
+	float:left;
+	margin-right: 2%;
+	background-image: url('../images/WL-20.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.hh10{
+	height: 200px;
+	width:205px;
+	background-color:black;
+	float:left;
+	background-image: url('../images/WL-21.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.d11{
+	height: 80px;
+	width: 850px;
+	background-color:black;
+	margin-left: 70px;
+}
+.hh11{
+	height:80px;
+	width:250px;
+	color: white;
+	text-align: left;
+	float: left;
+}
+.hh12{
+	height:80px;
+	width:250px;
+	color: white;
+	text-align: left;
+	float: left;
+	margin-left: 5%;
+
+}
+.hh13{
+	height:80px;
+	width:250px;
+	color: white;
+	text-align: left;
+	float: left;
+	margin-left: 6%;
+}

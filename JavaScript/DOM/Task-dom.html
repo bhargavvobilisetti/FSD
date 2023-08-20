@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task-table</title>
+</head>
+<body>
+	<table border="" id="table">
+		
+			<th>course name</th>
+			<th>course number</th>
+			<th>course fees</th>
+			<th>place</th>
+		
+
+		 <tbody id="tbodyid"></tbody>
+
+		<script type="text/javascript">
+			var obj=[{
+		'name':'tata',
+		'rollno':1234,
+		'college':'ace',
+		'branch':'cse'
+
+	},
+	{
+		'name':'tata1',
+		'rollno':12345,
+		'college':'acet',
+		'branch':'cse'
+	},
+	{
+		'name':'tata3',
+		'rollno':12345,
+		'college':'acet',
+		'branch':'cse'
+	}]
+	for(var i=0;i<obj.length;i++){
+		// document.getElementsByTagName("tbody")[0].innerHTML+="<tr><td>"+obj[i].name+"</td><td>"+obj[i].rollno+"</td><td>"+obj[i].college+"</td><td>"+obj[i].branch+"</td></tr>"
+    	// document.getElementsByTagName('tbody')[0].innerText
+    		// document.write(obj[i][key],"\n")
+    		// //console.log(obj[i][key])	
+    	
+    	let tr=document.createElement('tr')
+    	let td1=document.createElement('td')
+    	let td2=document.createElement('td')
+    	let td3=document.createElement('td')
+    	let td4=document.createElement('td')
+    	// td.innerText=obj[i].name
+    	// td.innerText=obj[i].rollno
+    	// td.innerText=obj[i].college
+    	// td.innerText=obj[i].branch
+    	td1.innerText=obj[i].name;
+    	td2.innerText=obj[i].rollno;
+
+td3.innerText=obj[i].college;
+
+td4.innerText=obj[i].branch;
+
+    	tr.appendChild(td1)
+    	tr.appendChild(td2)
+    	tr.appendChild(td3)
+    	tr.appendChild(td4)
+    	document.getElementsById('tbodyid').appendChild(tr)
+
+	    }
+
+
+
+		</script>
+	</table>
+
+</body>
+</html>
