@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SM|Task</title>
+</head>
+<body>
+
+		<h2><u>String Methods:</u></h2>
+	<script type="text/javascript">
+		let s=' Drive Ready '
+		function get(s,s1){
+			document.write("<b>" +s+ "</b> <br>")
+		}
+		get('The Original String is:'+s)
+		get('Substr = ' +s.substr(1,6))
+		get('Substring = '+s.substring(1,5))
+		get('Replace = '+s.replace('Ready','Course'))
+		get('Search = '+s.search('Drive'))
+		get("lower Case = "+s.toLowerCase())
+		get("Upper Case = "+s.toUpperCase(),"<br>")
+		get('Indexof = '+s.indexOf('e'))
+		get('Includes ='+s.includes('ready'))
+		get('Slice = '+s.slice(1,4))
+		get('Concat ='+s.concat(' Course'))
+		get('LastIndexOf ='+s.lastIndexOf('e'))
+		get('charCodeAt ='+s.charCodeAt('d'))
+		get("Tirm = "+s.trim())
+		get('CharAt = '+s.charAt(3))
+		get('ValueOf ='+s.valueOf())
+		let s1='Drive&Ready'
+		get('Split = '+s1.split("&"));
+		get('tostring = '+s.toString())
+		get('Match = '+s.match('Ready'))
+	</script>
+</body>
+</html>

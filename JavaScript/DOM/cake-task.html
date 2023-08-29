@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Mouse Over</title>
+</head>
+<body>
+    <center>
+    <div class="image" style="height: 390px; width: 300px; border: 5px solid black;">
+        <img src="cake.jpg" alt="" onmouseover="image()" style="height: 390px; width: 300px;">
+    </div>
+    </center>
+    <script>
+        function image(){
+            if(document.images[0].src.match("cake.jpg")){
+                document.images[0].src="slice-images.jpg";
+            }
+            else{
+                document.images[0].src='cake.jpg';
+            }
+        }
+    </script>
+</body>
+</html>

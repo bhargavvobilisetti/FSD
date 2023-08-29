@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+	<p id="demo"></p>
+	<button onclick="document.getElementById('demo1').innerHTML=d.getFullYear()">The year is?</button>
+	<p id="demo1"></p>
+	<button onclick="document.getElementById('demo2').innerHTML=(d.getMonth()+1)">The Month is?</button>
+	<p id="demo2"></p>
+	<button onclick="document.getElementById('demo3').innerHTML=d.getDate()">The Date is?</button>
+	<p id="demo3"></p>
+	<button onclick="document.getElementById('demo4').innerHTML=d.getHours()">The hours  is?</button>
+	<p id="demo4"></p>
+	<button onclick="document.getElementById('demo5').innerHTML=d.getMinutes()">The Minutes is?</button>
+	<p id="demo5"></p>
+	<button onclick="document.getElementById('demo6').innerHTML=d.getSeconds()">The Seconds is?</button>
+	<p id="demo6"></p>
+
+
+	<script type="text/javascript">
+		const d=new Date()
+		//year,month,day,hours,minutes,seconds,milliseconds
+		// document.write(d+"<br>")//current date
+		// document.write(d.getFullYear()+"<br>")//current year
+		// document.write((d.getMonth()+1)+"<br>")//current month
+		// document.write(d.getDay()+"<br>")//current
+		// document.write(d.getDate()+"<br>")
+		// document.write(d.getHours()+"<br>")//current hours 
+		// document.write(d.getMinutes()+"<br>")//current minutes
+		// document.write(d.getSeconds()+"<br>")//current seconds
+
+	</script>
+
+</body>
+</html>

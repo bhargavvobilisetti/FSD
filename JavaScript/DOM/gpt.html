@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details Table</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  h3{
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+  <h3>Product Details</h3>
+<center>
+<table id="productTable">
+  <tr>
+    <th>Product id</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Actions</th>
+  </tr>
+</table>
+
+<button onclick="addRow()">Add Row</button>
+</center>
+<script>
+function addRow() {
+  var table = document.getElementById("productTable");
+  var newRow = table.insertRow(table.rows.length);
+
+  var cell1 = newRow.insertCell(0);
+  var cell2 = newRow.insertCell(1);
+  var cell3 = newRow.insertCell(2);
+  var cell4 = newRow.insertCell(3);
+
+  cell1.innerHTML = table.rows.length - 1;
+  cell2.innerHTML = "<input type='text'>";
+  cell3.innerHTML = "<input type='text'>";
+  cell4.innerHTML = "<button onclick='editRow(this)'>Edit</button> <button onclick='deleteRow(this)'>Delete</button>";
+}
+
+function editRow(button) {
+  var row = button.parentNode.parentNode;
+  var cells = row.cells;
+
+  var nameInput = cells[1].querySelector("input[type='text']");
+  var priceInput = cells[2].querySelector("input[type='text']");
+
+  if (nameInput && priceInput) {
+    cells[1].innerHTML = nameInput.value;
+    cells[2].innerHTML = priceInput.value;
+    cells[3].innerHTML = "<button onclick='editRow(this)'>Edit</button> <button onclick='deleteRow(this)'>Delete</button>";
+  }
+}
+
+function deleteRow(button) {
+  var row = button.parentNode.parentNode;
+  var confirmation = confirm("Do you want to delete the record?");
+  
+  if (confirmation) {
+    row.parentNode.removeChild(row);
+    updateIds();
+  }
+}
+
+function updateIds() {
+  var table = document.getElementById("productTable");
+  var rows = table.rows;
+
+  for (var i = 1; i < rows.length; i++) {
+    rows[i].cells[0].innerHTML = i;
+  }
+}
+</script>
+
+</body>
+</html>
