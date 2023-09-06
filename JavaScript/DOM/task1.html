@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="text" name="" placeholder="find the word" id="Input">
+	<button onclick="getcount()">check count</button>
+	<p id="id1"></p>
+	<script type="text/javascript">
+		function getcount(){
+			let arr=["r","g","r","b","y","h","b","r"];
+			var search_ele=document.getElementById('Input').value;
+			let count=0
+			for (var i = 0; i < arr.length; i++) {
+				if(arr[i].includes(search_ele)){
+					count=count+1;
+
+
+			}
+			//document.write(arr[i]+"<br>")
+		}
+		document.getElementById('id1').innerText=count
+		//document.write(count+"<br>")
+
+	}
+	</script>
+</body>
+</html>

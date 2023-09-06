@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h3>array method|filters</h3>
+	<p>this method creates a new array and if the conditon is satisfied the return it iteration will completed.</p>
+	<script type="text/javascript">
+		let nums=[8,9,6,5,83,2];
+
+		let even_nums=nums.filter(function (ele) {
+			// body...
+			return ele%2==0
+		})
+		console.log(even_nums)
+		let odds_nums=nums.filter(function (ele) {
+			// body...
+			return ele
+		})
+		console.log(odds_nums)
+	</script>
+
+</body>
+</html>

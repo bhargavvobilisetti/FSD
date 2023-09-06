@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AM|Task</title>
+</head>
+<body>
+	<h2><u>Array Methods:</u></h2>
+
+	<script type="text/javascript">
+		let a=[1,5,3,2,4,6,7]
+		document.write("Original Array = "+a+"<br>")
+		let a1 = a.map(function(l)
+			{
+				return l*5
+			});
+            document.write(" Map() = "+a1+"<br>");
+        let a2 = a.filter(function(x)
+        	{
+        		return x%2==0
+        	});
+            document.write("Filter() = "+a2+"<br>");
+        a.sort();
+        document.write("Sort() = "+a+"<br>")
+        let a3 = []
+            a.forEach(function(x)
+            	{
+            		a3.push(x+2)
+            	});
+            document.write("foreach() = "+a3+"<br>")
+        document.write("Concat() = "+a.concat(10,9,8)+"<br>")
+        let a4 = a.every(function(x)
+        	{
+        		return x<10
+        	})
+            document.write("Every() =	 "+a4+"<br>");
+        let a5 = a.some(function(x)
+        	{
+        		return x>15
+        	})
+            document.write("Some() = "+a5+"<br>")
+        let a6 = a.includes(9);
+            document.write("Array() = "+a6+"<br>")
+        let a7 = ['Drive','Ready'];
+            document.write("Join() = "+a7.join('')+"<br>")
+        let a8 = a.reduce(function(a,b)
+        	{
+        		return a+b
+        	});
+            document.write("Reduce() = "+a8+"<br>")
+        let a9 = a.find(function(x)
+        	{
+        		return x>1
+        	});
+            document.write("Find() = "+a9+"<br>");
+        let a10 = a.findIndex(function(x)
+        	{
+        		return x>2
+        	});
+	        document.write("FindIndex() = "+a10+"<br>")
+	    let a11 = a.indexOf(3);
+            document.write("indexOf() = "+a11+"<br>")
+        let a12 = a.fill(11);
+            document.write("Fill() = "+a12+"<br>");
+        a = [1,2,3,4,5,6,7,8,9,10]
+        document.write("Slice() = "+a.slice(1,3)+"<br>")
+        document.write("Reverse() = "+a.reverse() + "<br>")
+       a.push(23);
+        document.write("Push() = "+a+"<br>")
+       a.pop();
+        document.write("Pop() = "+a+"<br>")
+       a.shift(5);
+        document.write("Shift() = "+a+"<br>")
+       a.unshift(1);
+        document.write("unshift() = "+a+"<br>")
+	</script>
+
+</body>
+</html>

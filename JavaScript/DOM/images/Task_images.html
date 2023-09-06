@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slideshow</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .slideshow-container {
+            max-width: 100%; 
+            position: relative;
+            margin: auto;
+        }
+
+        .Slides {
+            display: none;
+            max-width: 100%; 
+            height: auto;
+            height: 400px;
+            width: 800px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slideshow-container" style="width: 70%;">
+        <img src="1.jpeg" class="Slides">
+        <img src="1T.jpg" class="Slides">
+        <img src="2.jpg" class="Slides">
+        <img src="5T.jpg" class="Slides">
+        <img src="6T.jpg" class="Slides">
+        <img src="Profile 2.jpg" class="Slides">
+        <img src="8T.jpg" class="Slides">
+
+    </div>
+
+    <script >
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("Slides");
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            slides[slideIndex].style.display = "block";
+            
+            setTimeout(showSlides, 3000);
+        }
+
+            showSlides();
+
+    </script>
+</body>
+</html>

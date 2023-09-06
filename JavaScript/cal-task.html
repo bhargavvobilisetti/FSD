@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cal</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style type="text/css">
+	/*#c1{
+		border-collapse: collapse;
+		height: 400px;
+		width:400px;
+		border: 2px solid #6c757d;
+		text-align: center;
+
+	}*/
+	/*td{
+/*		border:3px solid #6c757d ;*/
+		/*font-size:30px;
+		border: 5px solid #4287f5;
+	}
+	tr{
+		border: 3px solid #070a0f;
+	}*/
+	table, tr,td {
+  border: 3px solid #4287f5;
+  border-collapse: collapse;
+  width: 800px;
+  height: 80px;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+ 
+}
+	td:not(#result){
+    cursor: pointer;
+    /* Applying hover cursor property for all td's except result_id(text box) attribute */
+}
+
+</style>
+<body>
+	
+	<center>
+		<h1>Calculator</h1>
+		<table border="1" id="c1">
+		<tr>
+			<td colspan="4" style="height: 50px;width:50px;text-align: right; "id="result"></td>
+		</tr>
+		<tr>
+			<td onclick="getnum('(')">(</td>
+			<td onclick="getnum(')')">)</td>
+			<td onclick="Back()"><i class="fa-solid fa-delete-left"></i></td>
+			<td onclick="Clearall()">AC</td>
+		</tr>
+		<tr>
+			<td onclick="getnum('7')">7</td>
+			<td onclick="getnum('8')">8</td>
+			<td onclick="getnum('9')">9</td>
+			<td onclick="getnum('/')">/</td>
+		</tr>
+		<tr>
+			<td onclick="getnum('4')">4</td>
+			<td onclick="getnum('5')">5</td>
+			<td onclick="getnum('6')">6</td>
+			<td onclick="getnum('*')">*</td>
+		</tr>
+		<tr>
+			<td onclick="getnum('1')">1</td>
+			<td onclick="getnum('2')">2</td>
+			<td onclick="getnum('3')">3</td>
+			<td onclick="getnum('-')">-</td>
+		</tr>
+		<tr>
+			<td onclick="getnum('0')">0</td>
+			<td onclick="getnum('.')">.</td>
+			<td onclick="getnum('=')">=</td>
+			<td onclick="getnum('+')">+</td>
+		</tr>
+		</table>
+	</center>
+
+	<script type="text/javascript">
+		function getnum(val){
+			if(val=='='){
+				var res=document.getElementById('result').innerText;
+				document.getElementById('result').innerText =eval(res);
+				console.log(eval(res))
+			}
+			else{
+				document.getElementById('result').innerText+=val;
+			}
+		}
+		function Clearall(){
+			document.getElementById('result').innerText=''
+		}
+		// function Clear(){
+		// 	document.getElementById('result').innerText=''
+		// }
+		function Back() {
+			 result.innerText = result.innerText.slice(0,-1)
+}
+
+		
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cal</title>
+</head>
+<style type="text/css">
+	/*#c1{
+		border-collapse: collapse;
+		height: 400px;
+		width:400px;
+		border: 2px solid #6c757d;
+		text-align: center;
+
+	}*/
+	/*td{
+		border:3px solid #6c757d ;
+	}*/
+	table, th,td {
+  border: 3px solid #6c757d;;
+  border-collapse: collapse;
+  width: 700px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+ 
+}
+	td:not(#result){
+    cursor: pointer;
+}
+
+</style>
+<body>
+	
+	<center>
+		<h1>Calculator</h1>
+		<table border="1" id="c1">
+		<tr>
+			<td colspan="4" style="height: 30px;width:30px;text-align: right;"id="result"></td>
+		</tr>
+		<tr>
+			<td onclick="getnum('9')">9</td>
+			<td onclick="getnum('8')">8</td>
+			<td onclick="getnum('7')">7</td>
+			<td onclick="getnum('/')">/</td>
+		</tr>
+		<tr>
+			<td onclick="getnum('6')">6</td>
+			<td onclick="getnum('5')">5</td>
+			<td onclick="getnum('4')">4</td>
+			<td onclick="getnum('*')">*</td>
+		</tr>
+		<tr>
+			<td onclick="getnum('3')">3</td>
+			<td onclick="getnum('2')">2</td>
+			<td onclick="getnum('1')">1</td>
+			<td onclick="getnum('-')">-</td>
+		</tr>
+		<tr>
+			<td onclick="getnum('0')">0</td>
+			<td onclick="Clearall()">C</td>
+			<td onclick="getnum('=')">=</td>
+			<td onclick="getnum('+')">+</td>
+		</tr>
+		</table>
+	</center>
+
+	<script type="text/javascript">
+		function getnum(val){
+			if(val=='='){
+				var res=document.getElementById('result').innerText;
+				document.getElementById('result').innerText =eval(res);
+			}
+			else{
+				document.getElementById('result').innerText+=val;
+			}
+		}
+		function Clearall(){
+			document.getElementById('result').innerText=''
+		}
+
+		
+	</script>
+
+</body>
+</html> -->

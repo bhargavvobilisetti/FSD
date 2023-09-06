@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<center>
+	<form id="id-form">
+		first name:<input type="text" required="requrired" name="fname"><br>
+		last name:<input type="text" required="requrired" name="lname"><br><br>
+		<select name="colleges">
+		<option> --select college</optionb>
+			<option value="ace" >ace</option>
+			<option value="acet" >acet</option>
+			<option value="aec">aec</option>
+		</select><br><br>
+		roll no:<input type="text" name="rollno"><br><br>
+		branch:<input type="text" name="branch"><br><br>
+		
+S
+<input type="button" name="" onclick="formsubmit()" value="submit form">
+	</form>
+</center>
+	<script type="text/javascript">
+		function formsubmit(){
+			document.getElementById('id-form').submit();
+			alert("submitform");
+		}
+		//file:///D:/FSD/JavaScript/DOM/Form-events1.html
+		// file:///D:/FSD/JavaScript/DOM/Form-events1.html?fname=r&lname=u&colleges=ace
+	</script>
+</body>
+</html>

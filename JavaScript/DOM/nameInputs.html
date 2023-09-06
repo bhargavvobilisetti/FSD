@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>INput </title>
+</head>
+<body>
+	<form id="form">
+		<center>
+	enter your name:<input id="input" type="text" onkeyup ="sample(this.value)">
+	<br><br>
+	</form>
+	<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+	<p id="demo"></p>
+	<span id="t"></span>
+	<script type="text/javascript">
+		document.getElementById('input').style.border = "3px solid #0000FF";
+		function sample(na){
+		
+		if(na==""){
+			 document.getElementById('t').innerText="please enter your name";
+			// alert("please enter your ame")
+		}
+		else{
+			document.getElementById('t').innerText=na;
+		}
+	}
+	</script>
+
+</body>
+</html>

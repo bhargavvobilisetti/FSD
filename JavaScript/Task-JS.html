@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button.add-button {
+            background-color:#0d6efd;
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        .add-button-text {
+            display: inline-block;
+            padding-right: 30px;
+        }
+        .editable input {
+            border: none; 
+            width: 80%;
+        }
+        .editable.editing input {
+            pointer-events: auto; 
+        }
+        .delete-button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: red;
+        }
+       
+        .custom-edit-icon {
+            color: orange; 
+        }
+        .custom-save-icon {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Product Details:</h2>
+    <div class="add-button-container">
+        <button id="addButton" class="add-button">
+            <span class="add-button-text"><b>+ Add New</b></span>
+        </button>
+    </div>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="editable">
+                <td><input type="text" value="801123"></td>
+                <td><input type="text" value="Apple mobile"></td>
+                <td><input type="text" value="180000"></td>
+                <td><button class="custom-edit-button" onclick="toggleEdit(this)"><i class="fas fa-pencil-alt custom-edit-icon"></i></button><button class="delete-button" onclick="confirmDelete(this)"><i class="fas fa-trash"></i></button></td>
+            </tr>
+            <tr class="editable">
+                <td><input type="text" value="456789"></td>
+                <td><input type="text" value="Realme mobile"></td>
+                <td><input type="text" value="16000"></td>
+                <td><button class="custom-edit-button" onclick="toggleEdit(this)"><i class="fas fa-pencil-alt custom-edit-icon"></i></button><button class="delete-button" onclick="confirmDelete(this)"><i class="fas fa-trash"></i></button></td>
+            </tr>
+            <tr class="editable">
+                <td><input type="text" value="123456" ></td>
+                <td><input type="text" value="Mi Mobile" ></td>
+                <td><input type="text" value="18000" ></td>
+                <td><button class="custom-edit-button" onclick="toggleEdit(this)"><i class="fas fa-pencil-alt custom-edit-icon"></i></button><button class="delete-button" onclick="confirmDelete(this)"><i class="fas fa-trash"></i></button></td>
+            </tr>
+            <tr class="editable">
+                <td><input type="text" value="365648"></td>
+                <td><input type="text" value="Vivo mobile"></td>
+                <td><input type="text" value="20000"></td>
+                <td><button class="custom-edit-button" onclick="toggleEdit(this)"><i class="fas fa-pencil-alt custom-edit-icon"></i></button><button class="delete-button" onclick="confirmDelete(this)"><i class="fas fa-trash"></i></button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function toggleEdit(button) {
+            var row = button.parentNode.parentNode;
+            var icon = button.querySelector('i');
+            if (icon.classList.contains('fa-pencil-alt')) {
+                // Switch to the save (tick) icon
+                icon.classList.remove('fa-pencil-alt');
+                icon.classList.add('fa-check-circle');
+                icon.classList.add('custom-save-icon');
+               
+                row.classList.add('editing');
+                var inputs = row.querySelectorAll('input');
+                for (var i = 0; i < inputs.length; i++) {
+                    inputs[i].disabled = false;
+                }
+            } else {
+                icon.classList.remove('fa-check-circle');
+                icon.classList.remove('custom-save-icon');
+                icon.classList.add('fa-pencil-alt');             
+                row.classList.remove('editing'); 
+                var inputs = row.querySelectorAll('input');
+                for (var i = 0; i < inputs.length; i++) {
+                    inputs[i].disabled = true;
+                }
+            }
+        }
+        function confirmDelete(button) {
+            var row = button.parentNode.parentNode;
+            if (window.confirm('Do you want to delete the record?')) {
+                row.parentNode.removeChild(row);
+            }
+        }
+        document.getElementById("addButton").addEventListener("click", function () {
+            addRow();
+        });
+        function addRow() {
+            var table = document.getElementById("myTable").getElementsByTagName('tbody')[0];
+            var newRow = table.insertRow(table.rows.length);
+            newRow.classList.add("editable"); 
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+            cell1.innerHTML = '<input type="text" placeholder="Product ID">';
+            cell2.innerHTML = '<input type="text" placeholder="Name">';
+            cell3.innerHTML = '<input type="text" placeholder="Price">';
+            cell4.innerHTML = '<button class="custom-edit-button" onclick="toggleEdit(this)"><i class="fas fa-pencil-alt custom-edit-icon"></i></button><button class="delete-button" onclick="confirmDelete(this)"><i class="fas fa-trash"></i></button>';
+        }
+    </script>
+</body>
+</html>

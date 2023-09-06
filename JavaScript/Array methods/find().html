@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<h2>Array methods |find </h2></title>
+</head>
+<body>
+	<p>This method returns the value when the condition is satisfied then exits from the iteration loop.</p>
+	<script type="text/javascript">
+		let traine=['venkatesh','divya','vinay','bhargav'];
+		 let getonename = traine.find(function(name){
+			return name.startsWith('b');
+		})
+
+		
+		//or
+		// traine.find(test);	
+		// function test(name) {
+		// 	return name.startsWith('v');
+		// }
+
+		console.log(getonename)
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events</title>
+</head>
+<body>
+	<!-- <center><button onclick="incrby1()">Increment</button>
+	<button onclick="decrby1()">Decrement</button>
+	<p>Output</p>
+	<p id="op_id"></p></center>
+	<script type="text/javascript">
+		var i=1;
+		function incrby1(){
+			if(i<6)
+			{
+				document.getElementById('op_id').innerText=i++;
+			}
+		}
+		function decrby1(){
+			if(i>0)
+			{
+				document.getElementById('op_id').innerText=i--;
+			}
+		}
+	</script> -->
+	<center>
+		<button onclick="nextslide()">Next</button>
+		<button onclick="prevslide()">Previous</button>
+		<p>Output</p>
+		<div id="output_id">
+			<!-- <img src="images/1.jpeg"> -->
+			<img style="height: 400px;width: 400px;" src="1T.jpg" >
+		</div>
+	</center>
+	<script type="text/javascript">
+		var i=1;
+		function nextslide(){
+			if(i<6){
+				var res=i++;
+				document.getElementById('output_id').innerHTML="<img src='1T.jpg"+res+".jpg'style=width:200px;height:200px'/>"
+			}
+		}
+		function prevslide(){
+			if(i>0){
+				var res=i--;
+				if(res!=6){
+					document.getElementById('output_id').innerHTML="<img src='2.jpg"+res+".jpg'style='width:200px;height:200px'/>"
+				}
+			}
+		}
+	</script>
+</body>
+</html>

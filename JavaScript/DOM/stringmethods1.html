@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<table border="2">
+		<tr>
+			<td>d</td>
+			<td>r</td>
+			<td>i</td>
+			<td>v</td>
+			<td>e</td>
+			<td>&nbsp;</td>
+			<td>r</td>
+			<td>e</td>
+			<td>a</td>
+			<td>d</td>
+			<td>y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		// let s='drive ready'
+		function get(s){
+			document.write("<b>"+s+"</b> <br>")
+		}
+		let s='drive ready'
+		get(s)
+		get(s.length); //find the length of the string
+		get(s.charAt(2))//character i at position 2
+		get(s.charAt(3)) //position at 3
+		get(s.indexOf('e'))//position at 4
+		get(s.indexOf('ready'))//position at 6
+		get(s.lastIndexOf('y'))//position at 10
+		// get(s.toUpperCase(),"<br>")
+
+		let s1='DRIVE READY'
+		// get(s1)
+		// get(s1.length); //find the length of the string
+		// get(s1.charAt(2))//character i at position 2
+		// get(s1.charAt(3)) //position at 3
+		// get(s1.indexOf('E'))//position at 4
+		// get(s1.indexOf('ready'))//position at 6
+		// get(s1.lastIndexOf('y'))//position at 10
+		get(" lower case:"+s1.toLowerCase())
+		get(" upper case:"+s1.toUpperCase(),"<br>")
+
+		let n2=' batch'
+		let n3=' fn'
+		let n4=  'FSD'
+		get("concate of string="+s1.concat(n2))
+		get("concate of string="+s1.concat(n2,n3,n4))
+		let u=' bhargav      '
+		get(u)	
+		get("tirm () method="+u.trim())
+
+
+		//converting string into an array => stringname.split()
+		// console.log(n4.split(""))
+
+		 let n5='Revi&ravi,Ram';
+		 console.log('split'+n5.split("&"));
+
+		 //console.log(n5.split(","));
+
+		 let n6='bhargav';
+		console.log(n6.startsWith('b'));
+		console.log(n6.endsWith('b'));
+		// console.log(n6.endSwitch('a'))
+		get(n6.startsWith('b'));
+		get(n6.endsWith('v'));
+		// get(n6.end('a'));
+		//slice
+		
+		get('slice of the string='+s.slice(1,4))//riv
+		
+		get('slice of the string='+s.slice(-3))//ady
+		get('slice of the string='+s.slice(-4,-2))//-4,(-2-2)=(-4,-3)//ea
+		get('slice of the string='+s.slice(-9,-5))//(-9,-6)//ive
+
+		//substrings-it is allowing the positive indexes
+		get('substring of string='+s.substring(1,5))//(1,4)
+		get('substring of string='+s.substring(5,1))//(
+		get('substring of string='+s.substring(-1))
+		get('substring of string='+s.substr(-1))
+
+
+		//substr string
+		get('substr of string='+s.substr(1,6))//(1,6)
+
+		//repeat method
+		get('repeat of string='+s.repeat(3),"<br>")
+
+		//replace method
+		get('replace of string ='+s.replace('ready','course'))
+
+
+
+		// document.write("<br>",s)
+		// document.write("<b>"+s+"</b>","<br>")
+		// document.write(s[0])
+	</script>
+
+</body>
+</html>

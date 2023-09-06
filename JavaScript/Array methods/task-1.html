@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+       <table border="1" id="table_id" cellspacing="0"></table>
+
+       <ul id="list_id"></ul>
+	<script type="text/javascript">
+
+      let trainees1 = 'Drive Ready'
+      // {
+      // 	'name':'divya',
+      // 	'rollno':1234
+      // },
+      // {
+      // 	'name':'kiran',
+      // 	'rollno':12345
+
+      // },
+      // ]
+ 
+      let tr ='';
+      trainees1.map(function(each_trainee,i,arr) {
+      	tr +="<tr><td>"+(i+1)+"</td><td>"+each_trainee.name+"</td><td>"+each_trainee.rollno+"</td></tr>";
+
+      })
+       document.getElementById('table_id').innerHTML =tr
+
+      // let ul ='';
+      // trainees1.map(function(each_trainee,i,arr) {
+      // 	ul +="<ul><li>"+(i+1)+"</li><li>"+each_trainee.name+"</li><li>"+each_trainee.rollno+"</li></ul>";
+
+      // })
+      // document.getElementById('list_id').innerHTML =ul
+
+
+	</script>
+
+</body>
+</html>
