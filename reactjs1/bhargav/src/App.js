@@ -8,11 +8,17 @@ import Menu from './menu';
 import Events from './events';
 import Trainees from './trainees';
 import Student from './student';
-import BackgroundColorChanger from './background'
+import BackgroundColorChanger from './BackgroundColorChanger';
+import BackgroundImageSlider from './BackgroundImageSliders';
 import Events1 from './events1';
+import IncrementAndDecrement from './Increm-and-decre';
 //import { trainee,a } from './person';
+import Hooks from './hooks';
+import Form from './form';
+import Form1 from './form1';
 
-import { BrowserRouter,Routes,Route} from 'react-router-dom';
+
+import { BrowserRouter,Routes,Route, Router} from 'react-router-dom';
 
 
 function App() {
@@ -33,7 +39,12 @@ function App() {
           <Route path="/student" element={<Student/>}/>
           <Route path="/events" element={<Events/>}/>
           <Route path="/events1" element={<Events1/>}/>
-          <Route path="/backgroundColorChanger" element={<background/>}/>
+          <Route path="/BackgroundColorChanger" element={<BackgroundColorChanger/>}/>
+          <Route path="/BackgroundImageSliders" element={<BackgroundImageSlider/>}/>
+          <Route path='/IncrementAndDecrement' element={<IncrementAndDecrement/>}/>
+          <Route path='Hooks'element={<Hooks/>}/>
+          <Route path='Form'element={<Form/>}/>
+          <Route path='Form1'element={<Form1/>}/>
           
 
     </Routes>

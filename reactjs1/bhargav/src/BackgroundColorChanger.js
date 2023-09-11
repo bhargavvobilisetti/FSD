@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const BackgroundColorChanger = () => {
   
-  const colors = ['#FF5733', '#33FF57', '#5733FF', '#FFFF33', '#33FFFF','#FF0000'];
+  const colors = ['#FF5733', '#33FF57', '#5733FF', '#FFFF33', '#33FFFF','#FF0000','#474236','#2a2a87','#872a4e','#3e872a'];
 
   // Initialize state to keep track of the current color
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
@@ -27,7 +27,7 @@ const BackgroundColorChanger = () => {
 
   return (
     <div style={style} onClick={changeBackgroundColor}>
-      <h1>Click me to change background color</h1>
+      {/* <button>Click to change background color</button> */}
     </div>
   );
 };
