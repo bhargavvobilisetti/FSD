@@ -34,3 +34,38 @@
 .id{
 	font-size: 40px;
 }
+.r5{
+	padding-left: 30px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#ut {
+  position: relative;
+  text-align: center;
+  color:black;
+}
+#r4{
+	font-size:40px;
+}
+#r3{
+	font-size: 20px;
+	color: white;
+	background-color: blue;
+}
+#t6{
+	padding-top: 50px;
+}
+.alpha { color: $purple; }
+.beta {
+  color: $yellow-300;
+  background-color: $pink-100;
+}
+#y7{
+	padding-top:30px ;
+	padding-bottom: 20px;
+}
