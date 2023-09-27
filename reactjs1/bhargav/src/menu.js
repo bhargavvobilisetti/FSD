@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 function Menu(){
     return(
         <div>
-        <Link to="/home">Home</Link> |
+        {/* <Link to="/home">Home</Link> |
         <Link to="/about">about</Link> |
         <Link to="/person">person</Link> |
         <Link to="/services">Services</Link> |
@@ -13,10 +13,12 @@ function Menu(){
         <Link to="/events1">Events1</Link> |
         <Link to="/BackgroundColorChanger">background</Link>|
         <Link to="/BackgroundImageSliders">background-Img</Link>|
-        <Link to="/IncrementAndDecrement">Ince-Dec</Link>|
+        <Link to="/IncrementAndDecrement">Ince-Dec</Link>| */}
         <Link to="/Hooks">Hooks</Link>|
         <Link to="/Form">Form</Link>|
         <Link to="/Form1">Form1</Link>|
+        <Link to="/productinfo">products</Link>| 
+        <Link to="/Products1">Products1</Link>|
         
         </div>
     )

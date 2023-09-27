@@ -1,15 +1,18 @@
-.product-list{
+
+.products-list{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin: 20px;
+    text-align: center;
+
+
 }
 .card{
-    width: 230px;
+    width: 300px;
     padding: 16px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px gray;
-
 }
 .card img{
     width: 100%;
